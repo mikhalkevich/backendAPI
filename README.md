@@ -25,6 +25,8 @@ admin can form links between these tables, and uploaded files (for example, imag
 <pre>php artisan serve</pre>
 Теперь бэкенд станет доступен для клиентских запросов, по умолчанию по хосту: http://localhost:8000
 
+## Documentation
+Инструкция по использованию BackendAPI доступна по адресу http://erud.by/backend
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
