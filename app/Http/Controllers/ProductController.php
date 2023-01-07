@@ -19,6 +19,19 @@ class ProductController extends Controller
         return ProductResource::collection($products)->additional(['collection' => 'public products']);
     }
 
+    public function publicPaginate(Request $request)
+    {
+        $products = Product::filter($request->all())->simplePaginate(10);
+        return ProductResource::collection($products)->additional(['collection' => 'public products with paginate']);
+    }
+
+    public function publicOne($id)
+    {
+        //вывод одной записи
+        $product = Product::find($id);
+        return new ProductResource($product);
+    }
+
     public function index(Request $request)
     {
         $products = Product::orderBy('id', 'DESC')->paginate(10);
