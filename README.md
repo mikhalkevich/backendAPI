@@ -15,11 +15,11 @@ This backend API is designed to serve client requests, both public and admin. Fo
 - git clone https://github.com/mikhalkevich/backendAPI
   <p>Файл .env отсутствует в репозитории и его можно воссоздать по примеру .env.example</p>
   <p>Для установки необходимых модулей необходимо выполнить команду:</p>
-- composer install
+<pre>composer install</pre>
 После чего необходимо выполнить миграции:
-- php artisan migrate
+<pre>php artisan migrate</pre>
 Запустить проект с помощью команды
-- php artisan serve
+<pre>php artisan serve</pre>
 Теперь бэкенд станет доступен для клиентских запросов, по умолчанию по хосту: http://localhost:8000
 
 ## License
