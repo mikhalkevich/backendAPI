@@ -24,6 +24,7 @@ class ProductResource extends JsonResource
             'name' => $this->name,
             'description' => $this->description,
             'small_description' => $this->small_description,
+            'weight' => $this->weight,
             'price' => $this->when($request->price, $this->price),
             'pictures' => $this->when($request->pictures, $media_arr),
             'catalogs' => $this->when($request->catalogs, CatalogResource::collection($this->catalogs)),

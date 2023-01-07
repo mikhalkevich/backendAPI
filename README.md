@@ -9,9 +9,12 @@
 
 ## About Backend API on Laravel
 
-This backend API is designed to serve client requests, both public and admin. For the admin part, after authorization, CRUD requests in the model become available: catalog, products, companies, media library. With separate requests, the admin can form links between these tables, and uploaded files (for example, images) can be linked to any model.
+This backend API is designed to serve client requests, both public and admin. For the admin part, after authorization,
+CRUD requests in the model become available: catalog, products, companies, media library. With separate requests, the
+admin can form links between these tables, and uploaded files (for example, images) can be linked to any model.
 
 ## Installation
+
 <pre> git clone https://github.com/mikhalkevich/backendAPI </pre>
   <p>Файл .env отсутствует в репозитории и его можно воссоздать по примеру .env.example</p>
   <p>Для установки необходимых модулей необходимо выполнить команду:</p>
